@@ -46,6 +46,16 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-pytest"
+version = "0.2.0"
+description = "django test runner to use py.test tests"
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-pytest-0.2.0.tar.gz", hash = "sha256:de21f20f9e7eb941529d75078b18192506a9f6d4ae80f86fbe2f3bcac8e09d71"},
+]
+
+[[package]]
 name = "iniconfig"
 version = "2.0.0"
 description = "brain-dead simple config-ini parsing"
@@ -150,4 +160,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "eae16210277cf148c544488a7e268f7b9f8624fe92e9fa5185abd89973cca5ae"
+content-hash = "ac5c1c1728ee5517780b27ffdfe8454aae8280be1310379cfe19234e5929ae3d"
