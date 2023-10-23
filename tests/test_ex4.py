@@ -1,5 +1,5 @@
 import pytest
-
+from django.contrib.auth.models import User
 
 # @pytest.fixture() # arrange data  , arrange phase
 # def user_1(db):
@@ -23,11 +23,30 @@ import pytest
 #     assert user_1.username == "test-user"
 
 
-def test_new_user(new_user1):
-    print(new_user1)
-    assert new_user1.first_name == "My Name"
+# def test_new_user(new_user1):
+#     print(new_user1)
+#     assert new_user1.first_name == "My Name"
 
 
-def test_new_user2(new_user2):
-    print(new_user2.is_staff)
-    assert new_user2.is_staff  # == True X  # "True"
+# def test_new_user2(new_user2):
+#     print(new_user2.is_staff)
+#     assert new_user2.is_staff  # == True X  # "True" -> yes
+
+# @pytest.mark.django_db
+# def test_new_user(user_factory):
+#     user = user_factory.build()
+#     count = User.objects.all().count()
+#     print(count)
+#     print(user.username)
+#     assert True
+
+
+# def test_new_user(new_user1):
+#     print(new_user1.username)
+#     assert True
+
+
+def test_product(db, product_factory):
+    product = product_factory.create()
+    print(product.description)
+    assert True
