@@ -46,7 +46,7 @@ from django.contrib.auth.models import User
 #     assert True
 
 
-def test_product(db, product_factory):
-    product = product_factory.create()
-    print(product.description)
-    assert True
+# def test_product(db, product_factory):
+#     product = product_factory.create()
+#     print(product.description)
+#     assert True
